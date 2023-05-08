@@ -1,7 +1,8 @@
 'use client'
 import { extendTheme } from '@chakra-ui/react'
+import { withProse } from '@nikolovlazar/chakra-ui-prose'
 
-const colors = {
+const spacing = {
   spacing: {
     "0": "0px",
     "1": "8px",
@@ -15,4 +16,13 @@ const colors = {
   },
 }
 
-export const theme = extendTheme({ colors })
+export const theme = extendTheme(
+  {
+    spacing
+  },
+  withProse({
+    baseStyle: {
+      lineHeight: "0.9em",
+    },
+  }),
+)
