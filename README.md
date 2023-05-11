@@ -1,6 +1,8 @@
+https://yellowdesi.us/
+
+CI/CD: https://console.seed.run/yellow/yellowdesi-us
+
 useful commands:
 
-yarn sst dev
-yarn run dev
-yarn sst deploy --stage prod
-prod url: https://d1w8so7s7rotbl.cloudfront.net/
+1. ```yarn sst dev```
+2. ```yarn run dev```

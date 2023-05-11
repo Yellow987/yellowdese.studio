@@ -11,10 +11,9 @@ export default function Home() {
 
   return (
     <>
-      hello world
       <Box style={{ width: "100%", height: "500px", minHeight: "500px", position: "relative" }} >
         <Image
-          src="/YellowVRC_2.png"
+          src="/YellowVRC_3.png"
           alt="My Image"
           fill
           style={{ objectFit: "cover", objectPosition: "center 20%" }}
