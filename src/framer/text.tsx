@@ -1,43 +1,35 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Box, useTheme, Text  } from "@chakra-ui/react";
+import { css, keyframes } from '@emotion/react';
 
 type Props = {
   children: React.ReactNode;
 };
 
 const YellowPulseText = ({ children }: Props) => {
+  const theme = useTheme();
+
+
+  const scroll = keyframes`
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+`;
+
   return (
-    <span style={{ position: "relative" }}>
-      <motion.span
-        animate={{ scaleX: [0, 1, 0] }}
-        transition={{
-          duration: 1.5,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-        style={{
-          display: "inline-block",
-          color: "black",
-          textShadow: "none",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0,
-          backgroundColor: "#FFEB3B",
-        }}
-      />
-      <span
-        style={{
-          display: "inline-block",
-          color: "black",
-          textShadow:
-            "0px 0px 1px #FFEB3B, 0px 0px 3px #FFEB3B, 0px 0px 5px #FFEB3B, 0px 0px 7px #FFEB3B, 0px 0px 10px #FFEB3B",
-        }}
-      >
-        {children}
-      </span>
-    </span>
+    <Box
+      as="div"
+      fontSize="xl"
+      fontWeight="bold"
+      lineHeight="shorter"
+      p={5}
+      backgroundImage="linear-gradient(to right, yellow, orange, black, orange, yellow)"
+      backgroundSize="200% 200%"
+      animation={`${scroll} 2s linear infinite`}
+      bgClip="text"
+      color="transparent"
+    >
+      {children}
+    </Box>
   );
 };
 

@@ -17,9 +17,8 @@ function Header() {
       pb={2}
     >
       <Box>
-        Yellow
         <YellowPulseText >
-          hi
+          Yellow
         </YellowPulseText>
       </Box>
     </Heading>
