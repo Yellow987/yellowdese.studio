@@ -15,17 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body >
         <ChakraThemeProvider>
           <Header />
           {children}
-          <Footer />
-          <Footer />
-          <Footer />
-          <Footer />
-          <Footer />
-          <Footer />
-          <Footer />
           <Footer />
         </ChakraThemeProvider>
       </body>

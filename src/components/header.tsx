@@ -3,6 +3,7 @@ import React from 'react'
 import { Heading, Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import YellowPulseText from '@/effects/text';
+import { WEBSITE_NAME } from '@/config/constants';
 
 function Header() {
   return (
@@ -17,7 +18,7 @@ function Header() {
     >
       <YellowPulseText >
         <Heading as="h1" size="xl">
-          YellowDesi.us
+          {WEBSITE_NAME}
         </Heading>
       </YellowPulseText>
     </Box>
