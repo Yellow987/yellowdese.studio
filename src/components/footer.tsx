@@ -1,9 +1,10 @@
 'use client'
-import { GITHUB_URL, WEBSITE_NAME, YOUTUBE_URL, EMAIL_ADDRESS, LINKEDIN_URL } from '@/config/constants';
+import { GITHUB_URL, WEBSITE_NAME, YOUTUBE_URL, EMAIL_ADDRESS, LINKEDIN_URL, CALENDLY_URL } from '@/config/constants';
 import { Flex, Icon, chakra, Link, Box } from '@chakra-ui/react';
 import React from 'react'
 import NextLink from 'next/link'
 import { FaYoutube, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { SiGooglemeet } from  'react-icons/si';
 
 function Footer() {
 
@@ -99,6 +100,29 @@ function Footer() {
     </Link>
   )
 
+  const meetIcon = (
+    <Link
+      as={NextLink}
+      href={CALENDLY_URL}
+      target='_blank'
+      rel="noopener noreferrer"
+      mx="2"
+      color="gray.600"
+      _dark={{
+        color: "gray.300",
+        _hover: {
+          color: "gray.400",
+        },
+      }}
+      _hover={{
+        color: "gray.500",
+      }}
+      aria-label="Calendly"
+    >
+      <SiGooglemeet />
+    </Link>
+  )
+
   return (
     <Flex
       w="full"
@@ -152,10 +176,11 @@ function Footer() {
             color: "white",
           }}
         >
-          Stay hydrated fren
+          Stay hydrated frens
         </chakra.p>
 
         <Flex mx="-2">
+          {meetIcon}
           {emailIcon}
           {githubIcon}
           {linkedInIcon}
