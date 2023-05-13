@@ -8,7 +8,7 @@ import { SiGooglemeet } from  'react-icons/si';
 
 function Footer() {
 
-  const githubIcon = (
+  const GithubIcon = () => (
     <Link
       as={NextLink}
       href={GITHUB_URL}
@@ -31,7 +31,7 @@ function Footer() {
     </Link>
   )
 
-  const youtubeIcon = (
+  const YoutubeIcon = () => (
     <Link
       as={NextLink}
       href={YOUTUBE_URL}
@@ -54,7 +54,7 @@ function Footer() {
     </Link>
   )
 
-  const linkedInIcon = (
+  const LinkedInIcon = () => (
     <Link
       as={NextLink}
       href={LINKEDIN_URL}
@@ -77,7 +77,7 @@ function Footer() {
     </Link>
   )
 
-  const emailIcon = (
+  const EmailIcon = () => (
     <Link
       as={NextLink}
       href={'mailto:' + EMAIL_ADDRESS}
@@ -100,7 +100,7 @@ function Footer() {
     </Link>
   )
 
-  const meetIcon = (
+  const MeetIcon = () => (
     <Link
       as={NextLink}
       href={CALENDLY_URL}
@@ -180,11 +180,11 @@ function Footer() {
         </chakra.p>
 
         <Flex mx="-2">
-          {meetIcon}
-          {emailIcon}
-          {githubIcon}
-          {linkedInIcon}
-          {youtubeIcon}
+          <MeetIcon />
+          <EmailIcon />
+          <GithubIcon />
+          <LinkedInIcon />
+          <YoutubeIcon />
         </Flex>
       </Flex>
     </Flex>

@@ -5,7 +5,13 @@ import { withProse } from '@nikolovlazar/chakra-ui-prose'
 export const theme = extendTheme(
   {
     global: {
-      
+      primary: '#FFFF00',
+      lightGreen: '#c9ff94',
+      limeGreen: '#d2ff4c',
+      tan: '#ffe28a'
+    },
+    colors: {
+
     },
     spacing: {
       "0": "0px",

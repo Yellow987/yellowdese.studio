@@ -4,6 +4,8 @@ import Test from '../markdown/test.mdx';
 import { Prose } from '@nikolovlazar/chakra-ui-prose'
 import React from 'react';
 import { Box, Button } from '@chakra-ui/react';
+import ThreeColumn from './../components/threeColumn';
+import UnderConstruction from '@/components/underConstruction';
 
 export default function Home() {
   React.createElement(Test)
@@ -19,12 +21,8 @@ export default function Home() {
           quality={100}
         />  
       </Box>
-      
-      <Button> hello </Button>
-      end
-      <Prose>
-        <Test />
-      </Prose>
+      <UnderConstruction size={100} />
+      <ThreeColumn />
     </>
   );
 }
