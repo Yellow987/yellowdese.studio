@@ -1,10 +1,13 @@
 import { SimpleGrid, chakra, Button, Box } from '@chakra-ui/react'
 import React from 'react'
+import Image from 'next/image';
+import { Link } from '@chakra-ui/next-js';
 
 interface HorizontalCardProps {
   title: string;
   description: string;
   buttonText: string | React.ReactNode;
+  link: string;
   image: string;
 }
 
@@ -65,39 +68,45 @@ function Horozontalcard(props: HorizontalCardProps) {
         >
           {props.description}
         </chakra.p>
-        <Button
-          w={{
-            base: "full",
-            sm: "auto",
-          }}
-          size="lg"
-          bg="gray.900"
-          _dark={{
-            bg: "gray.700",
-          }}
-          _hover={{
-            bg: "gray.700",
-            _dark: {
-              bg: "gray.600",
-            },
-          }}
-          color="gray.100"
-          as="a"
-        >
-          {props.buttonText}
-        </Button>
+        <Link href={props.link}>
+          <Button
+            w={{
+              base: "full",
+              sm: "auto",
+            }}
+            size="lg"
+            bg="gray.900"
+            _dark={{
+              bg: "gray.700",
+            }}
+            _hover={{
+              bg: "gray.700",
+              _dark: {
+                bg: "gray.600",
+              },
+            }}
+            color="gray.100"
+          >
+            {props.buttonText}
+          </Button>
+        </Link>
       </Box>
       <Box
-        w="full"
-        h="full"
-        py={48}
-        bg="gray.200"
-        _dark={{
-          bg: "gray.700",
+        style={{
+          maxHeight: "500px",
+          minHeight: "350px",
+          position: "relative",
         }}
-      ></Box>
+      >
+        <Image
+          src={props.image}
+          alt="dance gif"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
     </SimpleGrid>
   )
 }
 
-export default Horozontalcard
+export default Horozontalcard 

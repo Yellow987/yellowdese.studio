@@ -8,13 +8,12 @@ import ThreeColumn from './../components/threeColumn';
 import UnderConstruction from '@/components/underConstruction';
 
 export default function Home() {
-  React.createElement(Test)
 
   return (
     <>
       <Box style={{ width: "100%", height: "500px", minHeight: "500px", position: "relative" }} >
         <Image
-          src="/YellowVRC_3.png"
+          src="/images/YellowVRC_3.png"
           alt="My Image"
           fill
           style={{ objectFit: "cover", objectPosition: "center 20%" }}
