@@ -42,7 +42,7 @@ function ThreeColumn() {
           description='V-Tuber, Virtual girl, Animations, and More!'
           buttonText='Learn More'
           link='/digital'
-          image='/images/YellowDance.gif'
+          image='/images/YellowSmile_2.png'
         />
 
         <Horozontalcard 
@@ -58,7 +58,7 @@ function ThreeColumn() {
           description='Effective Altruism, Giving What We Can, Veganism'
           buttonText={todo}
           link='/good'
-          image='/images/YellowVRC_1.png'
+          image='/images/YellowSmile.png'
         />
       </Box>
     </Flex>

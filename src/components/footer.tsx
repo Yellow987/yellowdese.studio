@@ -100,6 +100,29 @@ function Footer() {
     </Link>
   )
 
+  const vrChatIcon = () => (
+    <Link
+      as={NextLink}
+      href={'https://vrchat.com/home/user/usr_f93e067a-7df7-4de8-8ea4-1ac76ec9d03b'}
+      target='_blank'
+      rel="noopener noreferrer"
+      mx="2"
+      color="gray.600"
+      _dark={{
+        color: "gray.300",
+        _hover: {
+          color: "gray.400",
+        },
+      }}
+      _hover={{
+        color: "gray.500",
+      }}
+      aria-label="vrChat"
+    >
+      
+    </Link>
+  )
+
   const MeetIcon = () => (
     <Link
       as={NextLink}

@@ -20,7 +20,6 @@ export default function Home() {
           quality={100}
         />  
       </Box>
-      <UnderConstruction size={100} />
       <ThreeColumn />
     </>
   );
