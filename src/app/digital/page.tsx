@@ -1,8 +1,9 @@
 'use client'
 import Image from 'next/image';
 import React from 'react';
-import { Box, Button } from '@chakra-ui/react';
+import { Box, Button, Center } from '@chakra-ui/react';
 import UnderConstruction from '@/components/underConstruction';
+import { Link } from '@chakra-ui/next-js';
 
 export default function Home() {
 
@@ -17,6 +18,11 @@ export default function Home() {
           quality={100}
         />  
       </Box>
+      <Center>
+        <Link href={"/mmd-generator"}>
+          <Button>MMD generator</Button>
+        </Link>
+      </Center>
       <UnderConstruction size={100} />
       hi
     </>
