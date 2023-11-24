@@ -1364,7 +1364,7 @@
 
 "@babylonjs/materials@^6.31.0":
   version "6.31.0"
-  resolved "https://registry.yarnpkg.com/@babylonjs/materials/-/materials-6.31.0.tgz#ee5aa0198a8cd9584315ffa6747fd30a72d3d325"
+  resolved "https://registry.npmjs.org/@babylonjs/materials/-/materials-6.31.0.tgz"
   integrity sha512-TCBSmaP+qEoRjUcxXAGAM/HM5rVn5IXQoFskJcPMbkotKtjEvfRBp/vCpsymte+uWLg16iFCjudKYqUjQuDgQQ==
 
 "@balena/dockerignore@^1.0.2":
@@ -5856,11 +5856,6 @@ ignore@^5.2.0, ignore@^5.2.4:
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.4.tgz"
   integrity sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==
 
-immediate@~3.0.5:
-  version "3.0.6"
-  resolved "https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz"
-  integrity sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==
-
 immer@9:
   version "9.0.21"
   resolved "https://registry.npmjs.org/immer/-/immer-9.0.21.tgz"
@@ -6428,29 +6423,10 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-lie@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/lie/-/lie-3.1.1.tgz"
-  integrity sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==
-  dependencies:
-    immediate "~3.0.5"
-
-lil-gui@^0.18.2:
-  version "0.18.2"
-  resolved "https://registry.npmjs.org/lil-gui/-/lil-gui-0.18.2.tgz"
-  integrity sha512-DgdrLy3/KGC0PiQLKgOcJMPItP4xY4iWgJ9+91Zaxfr8GCTmMps05QS9w9jW7yspILlbscbquwjOwxmWnSx5Uw==
-
 lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
-
-localforage@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.npmjs.org/localforage/-/localforage-1.10.0.tgz"
-  integrity sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==
-  dependencies:
-    lie "3.1.1"
 
 locate-path@^3.0.0:
   version "3.0.0"
@@ -7436,11 +7412,6 @@ patch-console@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/patch-console/-/patch-console-2.0.0.tgz"
   integrity sha512-0YNdUceMdaQwoKce1gatDScmMo5pu/tfABfnzEqeG0gtTmd7mh/WcwgUjtAeOU7N8nFFlbQBnFK2gXW5fGvmMA==
-
-path-browserify@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/path-browserify/-/path-browserify-1.0.1.tgz"
-  integrity sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
 
 path-exists@^3.0.0:
   version "3.0.0"
@@ -8751,14 +8722,6 @@ wcwidth@^1.0.1:
   integrity sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==
   dependencies:
     defaults "^1.0.3"
-
-"web-mmd@github:culdo/web-mmd":
-  version "1.0.0"
-  resolved "git+ssh://git@github.com/culdo/web-mmd.git#4799d28c57156a474b0b03c8dcd0bb2843c01cc4"
-  dependencies:
-    lil-gui "^0.18.2"
-    localforage "^1.10.0"
-    path-browserify "^1.0.1"
 
 web-streams-polyfill@^3.2.1:
   version "3.2.1"

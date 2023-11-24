@@ -50,6 +50,7 @@ import type { ISceneBuilder } from "./baseRuntime";
 
 export class SceneBuilder implements ISceneBuilder {
     public async build(_canvas: HTMLCanvasElement, engine: Engine): Promise<Scene> {
+        SdefInjector.OverrideEngineCreateEffect(engine);
         const scene = new Scene(engine);
         scene.enablePhysics(new Vector3(0, -9.8 * 10, 0), new HavokPlugin(true, await HavokPhysics()));
 
