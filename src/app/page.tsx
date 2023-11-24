@@ -20,6 +20,7 @@ export default function Home() {
           quality={100}
         />  
       </Box>
+      
       <ThreeColumn />
     </>
   );

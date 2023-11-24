@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babylonjs/core": "^6.31.0",
+    "@babylonjs/havok": "^1.3.0",
+    "@babylonjs/materials": "^6.31.0",
     "@chakra-ui/next-js": "^2.1.3",
     "@chakra-ui/react": "^2.6.0",
     "@emotion/react": "^11.10.8",
@@ -21,6 +24,7 @@
     "@types/node": "20.1.0",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "babylon-mmd": "^0.33.0",
     "eslint": "^8.40.0",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^10.12.7",
