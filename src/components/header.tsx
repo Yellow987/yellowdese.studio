@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
 import { Heading, Box } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import YellowPulseText from '@/effects/text';
 import { WEBSITE_NAME } from '@/config/constants';
+import { Link } from '@chakra-ui/next-js';
 
 function Header() {
   return (
@@ -16,11 +16,13 @@ function Header() {
       pt={0}
       pb={0}
     >
-      <YellowPulseText >
-        <Heading as="h1" size="xl">
-          {WEBSITE_NAME}
-        </Heading>
-      </YellowPulseText>
+      <Link href="/" _hover={{ textDecoration: 'none' }}>
+        <YellowPulseText >
+          <Heading as="h1" size="xl">
+            {WEBSITE_NAME}
+          </Heading>
+        </YellowPulseText>
+      </Link>
     </Box>
   );
 }

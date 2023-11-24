@@ -74,7 +74,7 @@ export class SceneBuilder implements ISceneBuilder {
         ground.receiveShadows = true;
         shadowGenerator.addShadowCaster(ground);
 
-        const mmdMesh = await SceneLoader.ImportMeshAsync("", "/mmd-resources/YYB Hatsune Miku_10th/", "YYB Hatsune Miku_10th_v1.02.pmx", scene)
+        const mmdMesh = await SceneLoader.ImportMeshAsync("", "/mmd/YYB Hatsune Miku_10th/", "YYB Hatsune Miku_10th_v1.02.pmx", scene)
             .then((result) => result.meshes[0] as Mesh);
         mmdMesh.receiveShadows = true;
         shadowGenerator.addShadowCaster(mmdMesh);
@@ -87,11 +87,11 @@ export class SceneBuilder implements ISceneBuilder {
 
         const vmdLoader = new VmdLoader(scene);
         const modelMotion = await vmdLoader.loadAsync("model_motion_1", [
-            "/mmd-resources/paint.vmd"
+            "/mmd/paint.vmd"
         ]);
 
         const cameraMotion = await vmdLoader.loadAsync("camera_motion_1",
-            "/mmd-resources/cam.vmd"
+            "/mmd/cam.vmd"
         );
 
         mmdModel.addAnimation(modelMotion);
@@ -101,7 +101,7 @@ export class SceneBuilder implements ISceneBuilder {
         camera.setAnimation("camera_motion_1");
 
         const audioPlayer = new StreamAudioPlayer(scene);
-        audioPlayer.source = "/mmd-resources/paint.wav";
+        audioPlayer.source = "/mmd/paint.wav";
         mmdRuntime.setAudioPlayer(audioPlayer);
 
         mmdRuntime.playAnimation();
